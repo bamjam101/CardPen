@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgba(71, 59, 59, 0.301);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.nav-bar{
+    display: flex;
+    background-color: black;
+    height: 8vh;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.nav-logo{
+    display: flex;
+    align-items: center;
+    font-size: ;
+}
+
+.nav-logo p{
+    display: flex;
+    font-size: 2.6vh;
+}
+
+.logo{
+    padding: 1vw;
+    width: 4vh;
+    height: 4vh;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    padding: 0 1vw;
+}
+
+nav ul a{
+    color: white;
+    text-decoration: none;
+    padding: 0.5vw;
+    text-shadow: ;
+    font-size: 2.6vh;
+}
+
+.page-description{
+    margin: 9vh;
+    color: black;
+    text-align: center;
+    font-size: 9vh;
+    justify-content: center;
+}
+
+#text1{
+    padding-right: 20vw;
+}
+
+#text3{
+    padding-left: 16vw;
+}
+
+.grid-box{
+    display: flex;
+    align-items: center;
+    height: 60vh;
+    width: 100%;
+    border: black 2px solid;
+}
+
+
+
+#user-1 {
+    width: 25vw;
+    height: 25vw;
+    margin: 0 3vw 0 3vw;
+}
+
+#user-2 {
+    width: 25vw;
+    height: 25vw;
+    margin: 0 3vw 0 3vw;
+}
+
+#user-3 {
+    width: 25vw;
+    height: 25vw;
+    margin: 0 3vw 0 3vw;;
+}
+
+footer{
+    background-color: black;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2.6vh;
+}
