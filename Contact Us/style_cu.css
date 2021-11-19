@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* body{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+} */
+
+body{
+    background: #0b0310;
+}
+
+.nav-bar{
+    display: flex;
+    height: 8vh;
+    align-items: center;
+    justify-content: space-between;
+    color: #c5c6c7;
+    background-color: #1f2833;
+    animation: shadow 5s ease-in;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes shadow {
+    0% {
+        box-shadow: 0px 0px 0px #C5C6C7;
+    }
+    100% {
+        box-shadow: 0px 0px 10px #C5C6C7;
+    }
+}
+
+
+.nav-logo{
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo p{
+    display: flex;
+    font-size: 2.6vh;
+}
+
+.nav-logo p:hover {
+    cursor: default;
+    color: #45A29E;
+    text-shadow: 0px 0 15px #45A29E;
+}
+
+.logo{
+    padding: 1vw;
+    width: 4vh;
+    height: 4vh;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+}
+
+li{
+    margin: 1vw;
+    transition: 0.5s;
+}
+
+.menu li a{
+    position: relative;
+    text-decoration: none;
+    color: #c5c6c7;
+    letter-spacing: 0.5px;
+    font-size: 2.5vh;
+    padding: 0.5vh;
+    transition: 0.5s;
+}
+
+.menu a::after{
+    content: "";
+    position: absolute;
+    background-color: #66fcf1;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -1px;
+    transition: 0.5s;
+}
+
+.menu a:hover::after{
+    width: 100%;
+}
+.menu a:hover{
+    color: white;
+    text-shadow: 0 0 20px;
+}
+
+
+
+
+/* ul{
+    list-style: none;
+    display: flex;
+    padding: 0 1vw;
+}
+
+nav ul a{
+    color: #66fcf1;
+    text-decoration: none;
+    padding: 0.5vw;
+    font-size: 2.6vh;
+} */
+
+
+
+
+/* ------------------------- Contact Us Animation  ---------------------------------- */
+
+
+
+
+.contact_us_at
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40vh;
+}
+
+
+h2
+{
+    position: relative;
+    font-size: 5vw;
+    color: #252839;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+h2::before
+{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    color: #66fcf1;
+    border-right: 2px solid #66fcf1;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+}
+
+@keyframes animate {
+    0%,10%,100%
+    {
+        width: 0;
+    }
+    70%,90%
+    {
+        width: 100%;
+    }
+}
+
+
+
+/* -------------------- Social Media Icons ----------------------------------- */
+
+
+
+.social-media ul
+{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 20vh;
+}
+
+.social-media ul li
+{
+    list-style: none;
+    margin: 0 5vw;
+}
+
+.social-media ul li .fab
+{
+    font-size: 30px;
+    line-height: 60px;
+    transition: .6s;
+    color: black;
+}
+
+.social-media ul li a
+{
+    position: relative;
+    display: block;
+    width: 10vh;
+    height: 10vh;
+    border-radius: 50%;
+    background-color: #c5c6c7;
+    text-align: center;
+    transition: 0.6s;
+}
+
+.social-media ul li a:hover
+{
+    transform: translate(0, -10px);
+}
+
+.social-media ul li a:hover .fab{
+    color: white;
+}
+
+.social-media ul li:nth-child(1) a:hover
+{
+    background-color: #3b5999;
+    box-shadow: 0px 0px 15px #3b5999;
+}
+
+.social-media ul li:nth-child(2) a:hover
+{
+    background-color: #E4405F;
+    box-shadow: 0px 0px 15px #E4405F;
+}
+
+.social-media ul li:nth-child(3) a:hover
+{
+    background-color: #0a66c2;
+    box-shadow: 0px 0px 15px #0a66c2;
+}
+
+
+
+/* --------------------------- Cards ---------------------------------------- */
+
+
+
+section{
+    position: relative;
+}
+
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 6vh 0 6vh 0;
+}
+
+.container .card{
+    position: relative;
+    width: 21vw;
+    height: 32vw;
+    background: #1f2833;
+    margin: 4vh 4vh 0 4vh;
+    box-shadow: 0px 0px 15px #1f2833;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.card:hover{
+    width: 24vw;
+    height: 35vw;
+    box-shadow: 0px 0px 20px #c5c6c7;
+}
+-----------   test   ---------------
+/* .card:hover .imagebox{
+    width: 165px;
+    height: 165px;    
+}
+
+.card:hover .content{
+    transform: scale(1.1, 1.1);
+    margin: 0;padding: 0;    
+} */
+
+/* .card:hover .card .content .imagebox{
+    width: 200px;
+    height: 200px;    
+} */
+-----------------------------
+
+.container .card .content
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    transition-property: transform;
+}
+
+.container .card .content .imagebox
+{
+    position: relative;
+    width: 12vw;
+    height: 12vw;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+
+.container .card .content .imagebox img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container .card .content .content_box h3{
+    color: #c5c6c7;
+    font-weight: 200;
+    font-size: 4vh;
+    text-align: center;
+    margin: 20px 0 10px;
+}
+
+.container .card .content .content_box h3 span{
+    font-weight: 300;
+    font-size: 4vh;
+    text-align: center;
+}
+
+
+
+
+
+footer{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #c5c6c7;
+    font-size: 2.6vh;
+    animation: fade_in 10s;
+}
+
+@keyframes fade_in {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+/* --------------------- Scrollbar ------------------------------- */
+
+::-webkit-scrollbar{
+    width: 0.75em;
+}
+
+::-webkit-scrollbar-track{
+    border-radius: 100vw;
+    background: #1f2833;
+}   
+
+::-webkit-scrollbar-thumb{
+    background: rgba(128, 128, 128, 0.753);
+    border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #c5c6c7c4;   
+}

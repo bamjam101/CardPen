@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background: #1F2833;
+}
+
+.nav-bar{
+    display: flex;
+    height: 8vh;
+    align-items: center;
+    justify-content: space-between;
+    color: #C5C6C7;
+    background-color: #1F2833;
+    animation: nav 2s ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes nav {
+    0% {
+        opacity: 0;
+        box-shadow: none;
+    } 90%{
+        box-shadow: 0 0 10px #C5C6C7;
+    }
+     100% {
+        opacity: 1;
+        box-shadow: 0 1px 10px #C5C6C7;
+    }
+}
+
+.nav-logo{
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo p{
+    display: flex;
+    font-size: 2.6vh;
+}
+
+.nav-logo p:hover {
+    color: #45A29E;
+    cursor:default;
+    text-shadow: 0 1px 10px #45A29E;
+}
+
+.logo{
+    padding: 1vw;
+    width: 4vh;
+    height: 4vh;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+}
+
+li{
+    margin: 1vw;
+}
+
+.menu a{
+    position: relative;
+    text-decoration: none;
+    color: #c5c6c7;
+    letter-spacing: 0.5px;
+    font-size: 2.5vh;
+    padding: 0.5vh;
+}
+
+.menu a::after{
+    content: "";
+    position: absolute;
+    background-color: #66fcf1;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -1px;
+    transition: 0.5s;
+}
+
+.menu a:hover::after{
+    width: 100%;
+}
+.menu a:hover{
+    color: white;
+    text-shadow: 0 0 20px;
+}
+/* ==========================body======================= */
+
+span {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 4vw;
+    color: #C5C6C7;
+    animation: span 3s ease-in;
+}
+
+@keyframes span {
+    0% {
+        opacity: 0;
+    } 100% {
+        opacity: 1;
+    }
+}
+
+
+
+/* --------------------------footer----------------------- */
+footer{
+    background-color: rgba(0,0,0,0);
+    height: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #C5C6C7;
+    font-size: 2.6vh;
+    animation: footer 2s ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes footer {
+    0% {
+        opacity: 0;
+    } 100% {
+        opacity: 1;
+    }
+}
