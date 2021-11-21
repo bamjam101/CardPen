@@ -13,6 +13,4 @@
 
 // }
 
-// function btn() {
-//     document.getElementById("proceed-btn").style.borderRadius = "3px solid black"
-// }
+

@@ -30,9 +30,9 @@
     </header>
     <main>
         <main class="container">
-            <div class="form">
+            <div class="form" id="Proceed">
                 <br><br>
-                <form action="#" name="inputForm" onsubmit="return(btn())"> <br>
+                <form name="inputForm" onsubmit="return Proceed()"> <br>
 
                         <label>First Name</label>
                         <input id="fname" name="fname" type="text" placeholder="Type here..." required>
@@ -51,13 +51,13 @@
 
                         <label>Status</label>
                         <label for="status0">
-                            <input type="radio" value="student" name="status" id="status0">Student
+                            <input type="radio" value="student" name="status" id="status0" required>Student
                         </label>
                         <label for="status1">
-                            <input type="radio" value="employed" name="status" id="status1">Employed
+                            <input type="radio" value="employed" name="status" id="status1" required>Employed
                         </label>
                         <label for="status2">
-                            <input type="radio" value="others" name="status" id="status2">others
+                            <input type="radio" value="others" name="status" id="status2" required>others
                         </label>
 
                         <button id="proceed-btn" type="submit">Proceed</button>
