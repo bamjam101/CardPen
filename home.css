@@ -251,7 +251,7 @@ main {
     clip-path: polygon(0 0, 75% 0, 100% 100%, 25% 100%);
     -webkit-clip-path: polygon(0 0, 75% 0, 100% 100%, 25% 100%);
     background: #667574;
-    transition: border-radius 1s, box-shadow 1s;
+    transition: 1s;
 }
 
 .float:hover {
@@ -297,23 +297,23 @@ main {
     color: #1F2833;
 }
 
-.prop:hover div:nth-child(4){
+.float:hover .prop div:nth-child(4){
     color: #C5C6C7;
     transform: translate(6vh, -6vh);
     opacity: 1;
 }
 
-.prop:hover div:nth-child(3){
+.float:hover .prop div:nth-child(3){
     transform: translate(4vh, -4vh);
     opacity: .8;
 }
 
-.prop:hover div:nth-child(2){
+.float:hover .prop div:nth-child(2){
     transform: translate(2vh, -2vh);
     opacity: .6;
 }
 
-.prop:hover div:nth-child(1){
+.float:hover .prop div:nth-child(1){
     transform: translate(0, 0);
     opacity: .4;
 }
@@ -329,7 +329,7 @@ center {
     clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
     -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
     background-color: #667574;
-    transition: border-radius 1s, box-shadow 1s;
+    transition: 1s;
 }
 
 center:hover {
@@ -338,42 +338,55 @@ center:hover {
 }
 
 center .p {
-    padding-top: 8vh;
-    margin: 2em 0;
-    color: #0B0C31;
-    font-family: fantasy;
+    transform: translateY(20vh);
+    padding: 10vh 0 2vh 0;
+    color: #c5c6c7;
+    font-family: consolas;
+    text-transform: uppercase;
     display: block;
     font-size: 16px;
     letter-spacing: 2px;
     transition: 1s;
-    text-transform: capitalize;
-    text-shadow: 4px 3px 10px #1f2833;
-    z-index: 1;
 }
 
-center .p:hover {
+center:hover .p {
+    transform: translateY(0);
     cursor: default;
-    color: whitesmoke;
+    color: #66fcf1;
+    text-shadow: 0 3px 15px whitesmoke;
 }
 
 /* ------------------------------------ */
-
-center p {
-    margin-bottom: 5vh;
-}
 
 center p {
     font-family: consolas;
     letter-spacing: 1px;
     text-decoration: solid;
     line-height: 4.5vh;
-    color: white;
+    color: whitesmoke;
+    opacity: 0;
+    transition: 1.5s;
+}
+
+center:hover p{
+    opacity: 1;
+    text-shadow: 0 3px 15px #fff;
+
 }
 
 .ideas {
+    margin-top: 5vh;
+    opacity: -1;
+    text-transform: uppercase;
     list-style-type: square;
     color: white;
-    text-shadow: 0px 1px 5px white;
+    text-shadow: 0px 1px 5px #C5C6C7;
+    transition: 1s;
+}
+
+center:hover .ideas {
+    transform: translateY(-10vh);
+    opacity: 1;
 }
 
 /* ------------------------------------ */
@@ -387,10 +400,14 @@ center .login {
     text-transform: uppercase;
     font-family: consolas;
     font-size: 1em;
-    position: relative;
     color: #757985;
     background: #1F2833;
     overflow: hidden;
+}
+
+center:hover .login {
+    transition-duration: 1s;
+    transform: translateY(22.5vh);
 }
 
 center .login:hover {

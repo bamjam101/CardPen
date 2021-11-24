@@ -14,3 +14,16 @@
 // }
 
 
+// function hover(){
+//     let btn = document.getElementById("proceedBtn").innerHTML
+//     let condition = document.getElementById("proceed")
+//     if (condition == hover){
+//         btn= "PROCEED";
+//     }
+// }
+
+// function myFunction(){
+//     document.getElementById("proceed").onsubmit.alert("YOOOOO");
+//     document.getElementById("One").onsubmit.alert('YO');
+//     console.log(10);
+// }

@@ -1,0 +1,379 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #0B0C10;
+    width: 100%;
+    font-family: consolas;
+}
+/* ==================Nav-bar===================== */
+.nav-bar{
+    display: flex;
+    height: 7vh;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    color: #C5C6C7;
+    background-color: rgba(0,0,0,0.5);
+    animation: nav 2s ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes nav {
+    0% {
+        opacity: 0;
+        box-shadow: none;
+    } 90%{
+        box-shadow: 0 0 10px #C5C6C7;
+    }
+     100% {
+        opacity: 1;
+        box-shadow: 0 1px 10px #C5C6C7;
+    }
+}
+
+.nav-logo{
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo p{
+    padding: 0.2rem;
+    display: flex;
+    font-size: 2.6vh;
+}
+
+.nav-logo p:hover {
+    color: white;
+    cursor:default;
+    text-shadow: 0 1px 10px #66fcf1, 0 1px 20px #66fcf1, 0 1px 30px #66fcf1;
+}
+
+.logo{
+    padding-left: 0.2rem; padding-right: 0.2rem;
+    border-radius: 3rem;
+    width: 4vh;
+    height: 4vh;
+    transition: 1s;
+}
+
+.logo:hover {
+    background-color: white;
+    box-shadow: 0px 0px 40px white, 0px 0px 80px white, 0px 0px 110px white;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+}
+
+.menu a{
+    position: relative;
+    text-decoration: none;
+    color: #c5c6c7;
+    margin: 0.5em;
+    letter-spacing: 0.1em;
+    font-size: 2.5vh;
+    padding: 0.5vh;
+}
+
+.menu a::after{
+    content: "";
+    position: absolute;
+    background-color: #66fcf1;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -1px;
+    transition: 0.5s;
+}
+
+.menu a:hover::after{
+    width: 100%;
+}
+.menu a:hover{
+    color: white;
+    text-shadow: 0 0 20px;
+}
+
+@media screen and (max-width: 480px){
+    .nav-bar {
+        width: 100%;
+        font-size: 1.5rem;
+        letter-spacing: 3px;
+    }
+
+    .nav-logo {
+        font-size: 1.5rem;
+        size: 5rem;
+        letter-spacing: 2px;
+        margin: 0;
+    }
+}
+
+/* ======================Main===================== */
+
+.container {
+    width: 100%;
+    min-height: 88vh;
+    background: #0B0C10;
+    justify-content: center;
+    animation: slide 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide {
+    0%{
+        margin-top: 20vh;
+        opacity: 0;
+    }100%{
+        margin-top: 0;
+        opacity: 1;
+    }
+}
+
+hr {
+    height: 2px;
+    width: 100%;
+    background-color: #1f2833;
+    display: flex;
+    justify-content: center;
+    margin: 4vh 0;
+    border: none;
+    transition: 1s;
+}
+
+.container:hover hr {
+    background-color: #66fcf1;
+    box-shadow: 0 0 2px #66fcf1;
+}
+
+.profile img{ 
+    margin: 6vh;
+    height: 20vh;
+    width: 20vh;
+    border-radius: 50%;
+    background-size: cover;
+    background-color: #0B0C10;
+    transition: 1s;
+}
+
+.profile img:hover {
+    background-color: #66fcf1;
+    box-shadow:0 0 4px #66fcf1, 0 0 6px #66fcf1, 0 0 8px #66fcf1;
+}
+
+.username {
+    display: flex;
+    margin-left: 3vh;
+    padding: 4vh;
+    color: white;
+    text-shadow: 1px 1px 0 2px white;
+}
+
+.username p {
+    padding-left: 86vh;
+}
+
+.email {
+    display: flex;
+    margin-left: 3vh;
+    text-align: center;
+    padding: 4vh;
+    color: white;
+    text-shadow: 1px 1px 0 2px white;
+}
+
+.email p {
+    padding-left: 80vh;
+}
+
+.bio {
+    display: flex;
+    margin-left: 3vh;
+    text-align: center;
+    padding: 4vh;
+    color: white;
+    text-shadow: 1px 1px 0 2px white;
+}
+
+.bio img {
+    height: 1.75rem;
+    width: 1.75rem;
+    background-size: cover;
+    margin-bottom: 2vh;
+}
+
+.bio input {
+    margin-left: 10px;
+    width: 100%;
+    height: 20vh;
+    border: none;
+    background-color: #0B0C10;
+    color: white;
+    font-size: 16px;
+    transition: box-shadow 1s;
+}
+
+.bio input:hover {
+    box-shadow: 0 0 4px #66fcf1, 0 0 6px #66fcf1, 0 0 8px #66fcf1;
+}
+
+
+
+/* =====================Editor btn===================== */
+.editor {
+    margin-top: -4vh;
+    width: 100%;
+    height: 50vh;
+    background: url("images/editorbtn.jpg");
+    background-position: top;
+    background-size: cover;
+    transition: 1s;
+}
+
+.editior:hover p {
+    transform: translateY(-3px);
+}
+
+.editor p {
+    display: flex;
+    padding: 16vh 0 10vh 0;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.editor p span {
+    color: #0B0C10;
+    font-weight: bold;
+}
+
+.editor p:hover span {
+    transition: 1s;
+    color: white;
+    font-weight: bold;
+}
+
+.editor a {
+    position: relative;
+    display: inline-block;
+    margin-left: 43%;
+    padding: 10px 20px;
+    text-decoration: none;
+    background: rgba(0,0,0,0.5);
+    color: whitesmoke;
+    overflow: hidden;
+}
+
+.editor .editorBtn:hover {
+    color: white;
+    background-color: #0B0C31;
+    box-shadow: 0 0 30px #0B0C31, 0 0 60px #0B0C31, 0 0 90px #0B0C31;
+    transition-delay: 1s;
+}
+
+.editor a span {
+    position: absolute;
+    display: block;
+}
+
+.editor a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(90deg,transparent,white);
+}
+
+.editor a:hover span:nth-child(1) {
+    left: 100%;
+    transition: 1s;
+}
+
+.editor a span:nth-child(2) {
+    right: 0;
+    top: -100%;
+    height: 100%;
+    width: 2px;
+    background: linear-gradient(180deg,transparent,white);
+}
+
+.editor a:hover span:nth-child(2) {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+.editor a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(270deg,transparent,white);
+}
+
+.editor a:hover span:nth-child(3) {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+.editor a span:nth-child(4) {
+    left: 0;
+    bottom: -100%;
+    height: 100%;
+    width: 2px;
+    background: linear-gradient(360deg,transparent,white);
+}
+
+.editor a:hover span:nth-child(4) {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+/*=================footer=================== */
+
+.footer{
+    background-color: rgba(0,0,0,0);
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 9.5vh;
+    color: #C5C6C7;
+    font-size: 2.6vh;
+    animation: footer 2.25s ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes footer {
+    0%{
+        opacity: 0;
+    } 100% {
+        opacity: 1;
+    }
+}
+/* ============================================= */
+/* ==================Scroolbar================== */
+
+
+::-webkit-scrollbar{
+    width: 0.75em;
+}
+
+::-webkit-scrollbar-track{
+    border-radius: 100vw;
+    background: #1f2833;
+}
+
+::-webkit-scrollbar-thumb{
+    background: rgba(128, 128, 128, 0.753);
+    border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #c5c6c7c4;   
+}
