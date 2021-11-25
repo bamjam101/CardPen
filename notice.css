@@ -207,3 +207,21 @@ footer{
         opacity: 1;
     }
 }
+
+::-webkit-scrollbar{
+    width: 0.75em;
+}
+
+::-webkit-scrollbar-track{
+    border-radius: 100vw;
+    background: #1f2833;
+}   
+
+::-webkit-scrollbar-thumb{
+    background: rgba(128, 128, 128, 0.753);
+    border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #c5c6c7c4;   
+}
