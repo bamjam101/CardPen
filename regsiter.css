@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 body{
@@ -147,7 +150,6 @@ nav ul{
     position: relative;
     display: flex;
     color: white;
-    font-family: sans-serif;
     font-size: 2.25vh;
     opacity: 0;
     transition: 1s;
@@ -157,7 +159,6 @@ nav ul{
     display: flex;
     justify-content: center;
     background-color: #1F2833;
-    font-family: sans-serif;
     margin: 0.8vh;
     border: rgba(0,0,0,0.5) 0.1vh solid;
     border-radius: 0.6rem;
@@ -189,7 +190,6 @@ nav ul{
     margin-left: 3em;
     border: none;
     text-transform: uppercase;
-    font-family: consolas;
     align-content: center;
     overflow: hidden;
     font-size: 2.5vh;
@@ -267,7 +267,6 @@ input:hover {
     position: relative;
     display: flex;
     color: #C5C6C7;
-    font-family: sans-serif;
     font-size: 2.25vh;
     transition: 1s;
     opacity: 0;
@@ -277,7 +276,6 @@ input:hover {
     display: flex;
     justify-content: center;
     background-color: #1F2833;
-    font-family: sans-serif;
     margin: 0.8vh;
     border: rgba(0,0,0,0.5) 0.1vh solid;
     border-radius: 0.6rem;
@@ -304,7 +302,6 @@ input:hover {
     margin-top: 1vh; margin-left: 3em;
     border: 0;
     text-transform: uppercase;
-    font-family: consolas;
     align-content: center;
     overflow: hidden;
     font-size: 2.5vh;
@@ -338,7 +335,6 @@ input:hover {
 .formTwo form a {
     display: flex;
     color: blue;
-    font-family: sans-serif;
     font-size: 0.75rem;
 }
 

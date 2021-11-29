@@ -25,7 +25,6 @@ body{
     background-color: #1f2833;
     animation: shadow 5s ease-in;
     animation-fill-mode: forwards;
-
 }
 
 @keyframes shadow {
@@ -207,8 +206,8 @@ h2::before
 {
     position: relative;
     display: block;
-    width: 10vh;
-    height: 10vh;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     background-color: #c5c6c7;
     text-align: center;

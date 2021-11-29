@@ -1,13 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 
 body {
     background: #1F2833;
     width: 100%;
-    font-family: consolas;
 }
 
 .nav-bar{
