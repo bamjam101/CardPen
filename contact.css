@@ -45,6 +45,7 @@ body{
 .nav-logo p{
     display: flex;
     font-size: 2.6vh;
+    transition: 0.5s;
 }
 
 .nav-logo p:hover {

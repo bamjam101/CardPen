@@ -18,7 +18,7 @@ body{
     justify-content: space-between;
     color: #C5C6C7;
     background-color: #1F2833;
-    animation: nav 5s ease-in;
+    animation: nav 2.5s ease-in;
     animation-fill-mode: forwards;
 }
 
@@ -26,7 +26,7 @@ body{
     0% {
         opacity: 0;
         box-shadow: none;
-    } 70%{
+    } 90%{
         box-shadow: 0 0 10px #C5C6C7;
     }
      100% {
@@ -43,6 +43,7 @@ body{
 .nav-logo p{
     display: flex;
     font-size: 2.6vh;
+    transition: 0.5s;
 }
 
 .nav-logo p:hover {
