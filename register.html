@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="regsiter.css">
-    <script src="register.js"></script>
+    <link rel="stylesheet" href="CSS/regsiter.css">
+    <script src="JS/register.js"></script>
     <title>Register | CardPen</title>
 </head>
 
@@ -50,25 +50,27 @@
                     <br>
 
                     <label>Status</label>
-                    <label for="status0">
-                        <input type="radio" value="student" name="status" id="status0" required>Student
+                    <label for="status">
+                        <input type="radio" value="student" name="status" id="status0">Student
                     </label>
-                    <label for="status1">
-                        <input type="radio" value="employed" name="status" id="status1" required>Employed
+                    <label for="status">
+                        <input type="radio" value="employed" name="status" id="status1">Employed
                     </label>
-                    <label for="status2">
-                        <input type="radio" value="others" name="status" id="status2" required>others
+                    <label for="status">
+                        <input type="radio" value="others" name="status" id="status2">others
                     </label>
 
-                    <button onsubmit="return myFunction()" id="proceedBtn" type="submit"><span class="hover">Hover Here</span><span
-                            class="change">Proceed</span></button>
+                    <a id="proceedBtn" href="submit.html">
+                        <span class="hover">Hover Here</span>
+                        <span class="change">Proceed</span>
+                    </a>
 
 
                 </form>
 
             </div>
 
-            <div id="One" class="formTwo">
+            <!-- <div id="One" class="formTwo">
                 <form name="inputFormTwo">
                     <label>UserName</label>
                     <input id="username" name="username" type="text" placeholder="Create an username" required>
@@ -88,9 +90,9 @@
                         <input type="checkbox" value="Accept" name="termsAndConditions" id="termsAndConditions"
                             required>Agree to the&nbsp;<a href="#">Terms & conditions</a>
                     </label><br>
-                    <button id="submitBtn" type="submit">Submit</button>
+                    <button onsubmit="Submit()" id="submitBtn" type="submit">Submit</button>
                 </form>
-            </div>
+            </div> -->
         </main>
     </main>
     <footer>

@@ -177,7 +177,8 @@ hr {
 }
 
 .username p {
-    padding-left: 86vh;
+    display: absolute;
+    margin-left: 84vh;
 }
 
 .email {
@@ -190,13 +191,14 @@ hr {
 }
 
 .email p {
-    padding-left: 80vh;
+    display: absolute;
+    margin-left: 80vh;
 }
 
 .bio {
     display: flex;
-    margin-left: 3vh;
-    text-align: center;
+    align-items: center;
+    justify-content: center;
     padding: 4vh;
     color: white;
     text-shadow: 1px 1px 0 2px white;
@@ -266,15 +268,15 @@ hr {
     margin-left: 43%;
     padding: 10px 20px;
     text-decoration: none;
-    background: rgba(0,0,0,0.5);
+    background: rgba(174, 175, 91, 0.5);
     color: whitesmoke;
     overflow: hidden;
 }
 
 .editor .editorBtn:hover {
     color: white;
-    background-color: #0B0C31;
-    box-shadow: 0 0 30px #0B0C31, 0 0 60px #0B0C31, 0 0 90px #0B0C31;
+    background-color: #768330;
+    box-shadow: 0 0 30px #768330, 0 0 60px #768330, 0 0 90px #768330;
     transition-delay: 1s;
 }
 
@@ -344,11 +346,20 @@ hr {
     height: 5vh;
     display: flex;
     justify-content: center;
-    padding-top: 9.5vh;
+    padding-top: 5vh;
     color: #C5C6C7;
     font-size: 2.6vh;
     animation: footer 2.25s ease-out;
     animation-fill-mode: forwards;
+}
+
+.footer:hover {
+    color: #0B0C10;
+    transition: 1s;
+    font-weight: 200%;
+    letter-spacing: 3px;
+    transform: translateY(-4vh);
+    opacity: 0;
 }
 
 @keyframes footer {
