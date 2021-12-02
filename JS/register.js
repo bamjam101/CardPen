@@ -7,7 +7,7 @@ function mainFunction() {
     
     let formOne = document.querySelector(".form");
     let formTwo = document.querySelector(".formTwo");
-    formOne.style.transform = "translateX(-25vh)";
+    formOne.style.transform = "translateX(-28vh)";
     formOne.style.opacity = "0";
     formTwo.style.opacity = "1";
     formTwo.style.transform = "translateX(-28vh)";
