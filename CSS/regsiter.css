@@ -132,25 +132,26 @@ nav ul li {
 }
 
 .form {
+    transform: translateX(28vh);
     position: relative;
     background-color: rgba(0,0,0,0.25);
-    height: 60vh;
-    width: 40vh;
+    height: 65vh;
+    width: 55vh;
     display: flex;
     justify-content: center;
     border-radius: 1rem;
+    opacity: 1;
     transition: 1s;
-    animation: form 2.25s ease-in;
-    animation-fill-mode: forwards;
 }
 
-@keyframes form {
-    0% {
-        opacity: 0;
-    } 100% {
-        opacity: 1;
-    }
+.form form {
+    position: relative;
+    display: block;
+    width: 90%;
+    height: 100%;
 }
+
+
 
 .form label {
     position: relative;
@@ -172,7 +173,6 @@ nav ul li {
 }
 
 .form:hover {
-    transform: translateY(-10px);
     box-shadow: 0 0.5rem 0 -0.25rem #C5C6C7,
     0 1rem 0 -0.5rem #45A29E,0 1.35rem 0 -0.75rem #66fcf1;
 }
@@ -193,12 +193,13 @@ nav ul li {
 }
 
 .form form a {
+    position: relative;
+    left: 35%;
     display: flex;
     align-items: center;
     text-decoration: none;
     text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
-    margin-left: 3em;
     border: none;
     justify-content: center;
     align-content: center;
@@ -208,8 +209,9 @@ nav ul li {
     background-color: #757985;
     text-align: center;
     height: 6vh;
-    width: 16vh;
+    width: 12vw;
     border-radius: 0.2rem;
+    cursor: pointer;
     transform: translateY(-25vh);
     transition: 1s;
     animation: btn 3.5s ease-in-out;
@@ -261,8 +263,8 @@ input:hover {
     justify-content: center;
     align-items: center;
     background-color: rgba(0,0,0,0.25);
-    height: 60vh;
-    width: 40vh;
+    height: 65vh;
+    width: 55vh;
     display: flex;
     justify-content: center;
     border-radius: 1rem;
@@ -270,9 +272,15 @@ input:hover {
 }
 
 .formTwo:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 0.5rem 0 -0.25rem #C5C6C7,
-    0 1rem 0 -0.5rem #45A29E,0 1.35rem 0 -0.75rem #66fcf1;
+    box-shadow: 0 0.5rem 0 -0.25rem #C5C6C7, 0 1rem 0 -0.5rem #45A29E, 0 1.35rem 0 -0.75rem #66fcf1;
+}
+
+.formTwo form {
+    position: relative;
+    display: block;
+    margin-top: 5vh;
+    width: 90%;
+    height: 100%;
 }
 
 .formTwo label {
@@ -280,6 +288,7 @@ input:hover {
     display: flex;
     color: #C5C6C7;
     font-size: 2.25vh;
+    padding: 3px;
     transition: 1s;
     opacity: 0;
 }
@@ -311,7 +320,7 @@ input:hover {
 
 .formTwo form button {
     position: relative;
-    margin-top: 1vh; margin-left: 3em;
+    margin-top: 4vh; margin-left: 1rem;
     border: 0;
     text-transform: uppercase;
     align-content: center;
@@ -319,8 +328,8 @@ input:hover {
     font-size: 2.5vh;
     color: white;
     background-color: #757985;
-    height: 6vh;
-    width: 18vh;
+    height: 7.5vh;
+    width: 90%;
     border-radius: 0.2rem;
     clip-path: polygon(85% 0, 100% 50%, 85% 100%, 0% 100%, 20% 53%, 0% 0%);
     background-position: center;
@@ -330,7 +339,7 @@ input:hover {
 
 .formTwo form button:hover {
     transform: translateY(-5px);
-    border-radius: 0.65rem;
+    border-radius: 6em;
     background: rgb(40, 255, 40);
     box-shadow: 0 0 10px rgb(40, 255, 40), 0 0 40px rgb(40, 255, 40), 0 0 80px rgb(40, 255, 40);
 }
@@ -351,7 +360,8 @@ input:hover {
 }
 
 .formTwo {
-    display: none;
+    /* display: none; */
+    opacity: 0;
 }
 
 /* ========================================= */
