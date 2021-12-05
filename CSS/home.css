@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+:root {
+    --flow: linear-gradient(
+        45deg,
+        #C5C6C7,
+        #1F2833,
+        #45A29E,
+        #757985,
+        #66FCF1,
+        #0B0C10
+    );
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -18,21 +30,23 @@ body{
     justify-content: space-between;
     color: #C5C6C7;
     background-color: #1F2833;
-    animation: nav 2.5s ease-in;
+    animation: nav 3s ease-in;
     animation-fill-mode: forwards;
+    transition: box-shadow 0.5s, background-color 0.75s;
 }
 
 @keyframes nav {
     0% {
         opacity: 0;
-        box-shadow: none;
-    } 90%{
-        box-shadow: 0 0 10px #C5C6C7;
     }
      100% {
         opacity: 1;
-        box-shadow: 0 1px 10px #C5C6C7;
     }
+}
+
+.nav-bar:hover {
+    background-color: #273546d7;
+    box-shadow: 0 1px 10px #C5C6C7;
 }
 
 .nav-logo{
@@ -114,6 +128,14 @@ main {
     text-align: center;
     font-size: 9vh;
     justify-content: center;
+}
+
+@keyframes motion {
+    0% {
+        background-position: left;
+    }100% {
+        background-position: right;
+    }
 }
 
 #text1{
@@ -258,6 +280,12 @@ main {
     background: #667574;
     transition: 1s;
 }
+
+/* .float-box {
+    transition-duration: 1s;
+    border-radius: 14rem;
+    /* box-shadow: 0 0 20px #66fcf1, 0 0 40px #66fcf1, 0 0 80px #66fcf1;
+} */
 
 .float:hover {
     border-radius: 14rem;
@@ -516,7 +544,8 @@ center a:hover span:nth-child(4) {
 }
 
 .title h1:nth-child(1){
-    letter-spacing: 0.15em;
+    padding-left: 1.5rem;
+    letter-spacing: 0.25em;
 }
 
 .title h1:nth-child(2) {
