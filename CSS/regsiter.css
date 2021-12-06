@@ -191,7 +191,8 @@ nav ul li {
     display: flex;
     justify-content: center;
     background-color: #1F2833;
-    margin: 1.2vh;
+    /* margin: 1.2vh; */
+    margin: 1.2vh 0;
     border: rgba(0,0,0,0.5) 0.1vh solid;
     color: #C5C6C7;
     border-radius: 0.6rem;
@@ -272,8 +273,10 @@ nav ul li {
 
 .form form a:hover {
     border-radius: 0.65rem;
-    background: rgb(40, 255, 40);
-    box-shadow: 0 0 10px rgb(40, 255, 40), 0 0 40px rgb(40, 255, 40), 0 0 80px rgb(40, 255, 40);
+    background: #66fcf1;
+    box-shadow: 0 0 10px #66fcf1, 0 0 40px #66fcf1, 0 0 80px #66fcf1;
+    color: black;
+    font-weight: bold;
 }
 
 input:hover {
@@ -328,7 +331,7 @@ input:hover {
     justify-content: center;
     color: #C5C6C7;
     background-color: #1F2833;
-    margin: 0.8vh;
+    margin: 1.2vh 0;
     border: rgba(0,0,0,0.5) 0.1vh solid;
     border-radius: 0.6rem;
     opacity: 0;
@@ -371,8 +374,10 @@ input:hover {
 .formTwo form button:hover {
     transform: translateY(-5px);
     border-radius: 6em;
-    background: rgb(40, 255, 40);
-    box-shadow: 0 0 10px rgb(40, 255, 40), 0 0 40px rgb(40, 255, 40), 0 0 80px rgb(40, 255, 40);
+    background: #66fcf1;
+    box-shadow: 0 0 10px #66fcf1, 0 0 40px #66fcf1, 0 0 80px #66fcf1;
+    color: black;
+    font-weight: bold;
 }
 
 .formTwo form a {
