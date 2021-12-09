@@ -123,6 +123,8 @@ nav ul{
     height: 88vh;
     width: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .box {
@@ -137,6 +139,7 @@ nav ul{
 }
 
 .box:hover {
+    transform: translateY(-5px);
     background: #1F2833;
     box-shadow: 0 0 30px #66FCF1, 0 0 60px #66FCF1, 0 0 80px #66FCF1;
 }
@@ -147,13 +150,13 @@ nav ul{
     display: flex;
     justify-content: center;
     margin-top: 20vh;
+    /* transform: translateY(10vh); */
     transition: 1s;
 }
 
 .box:hover h1 {
     margin-top: 0;
-    transform: translateY(10vh);
-
+    transform: translateY(4rem);
 }
 
 .box p {

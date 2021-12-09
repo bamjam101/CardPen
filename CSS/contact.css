@@ -1,16 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+:root {
+    --flow: linear-gradient(
+        45deg,
+        #1F2833,
+        #45A29E,
+        #66FCF1  
+    );
+}
+
 *{
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
-
-/* body{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-} */
 
 body{
     background: #0b0310;
@@ -18,22 +21,28 @@ body{
 
 .nav-bar{
     display: flex;
-    height: 8vh;
+    height: 7vh;
     align-items: center;
     justify-content: space-between;
-    color: #c5c6c7;
-    background-color: #1f2833;
-    animation: shadow 5s ease-in;
+    color: #C5C6C7;
+    background-color: #1F2833;
+    animation: nav 3s ease-in;
     animation-fill-mode: forwards;
+    transition: box-shadow 0.5s, background-color 0.75s;
 }
 
-@keyframes shadow {
+@keyframes nav {
     0% {
-        box-shadow: 0px 0px 0px #C5C6C7;
+        opacity: 0;
     }
-    100% {
-        box-shadow: 0px 0px 10px #C5C6C7;
+     100% {
+        opacity: 1;
     }
+}
+
+.nav-bar:hover {
+    background-color: #273546d7;
+    box-shadow: 0 1px 10px #C5C6C7;
 }
 
 
@@ -106,29 +115,7 @@ li{
     text-shadow: 0 0 20px;
 }
 
-
-
-
-/* ul{
-    list-style: none;
-    display: flex;
-    padding: 0 1vw;
-}
-
-nav ul a{
-    color: #66fcf1;
-    text-decoration: none;
-    padding: 0.5vw;
-    font-size: 2.6vh;
-} */
-
-
-
-
 /* ------------------------- Contact Us Animation  ---------------------------------- */
-
-
-
 
 .contact_us_at
 {
@@ -246,12 +233,9 @@ h2::before
 
 /* --------------------------- Cards ---------------------------------------- */
 
-
-
 section{
     position: relative;
 }
-
 
 .container{
     position: relative;
@@ -259,7 +243,7 @@ section{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin: 6vh 0 6vh 0;
+    margin: 12vh 0 6vh 0;
 }
 
 .container .card{
@@ -267,9 +251,8 @@ section{
     width: 21vw;
     height: 32vw;
     background: #1f2833;
-    margin: 4vh 4vh 0 4vh;
+    margin: 4vh;
     box-shadow: 0px 0px 15px #1f2833;
-    border-radius: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -277,26 +260,12 @@ section{
 }
 
 .card:hover{
-    width: 24vw;
-    height: 35vw;
-    box-shadow: 0px 0px 20px #c5c6c7;
+    cursor: default;
+    border-radius: 0.4rem;
+    transform: translateY(-1vh);
+    box-shadow: 0 0.5rem 0 -0.25rem #C5C6C7,
+    0 1rem 0 -0.5rem #45A29E,0 1.35rem 0 -0.75rem #66fcf1;
 }
------------   test   ---------------
-/* .card:hover .imagebox{
-    width: 165px;
-    height: 165px;    
-}
-
-.card:hover .content{
-    transform: scale(1.1, 1.1);
-    margin: 0;padding: 0;    
-} */
-
-/* .card:hover .card .content .imagebox{
-    width: 200px;
-    height: 200px;    
-} */
------------------------------
 
 .container .card .content
 {
@@ -310,7 +279,7 @@ section{
     transition-property: transform;
 }
 
-.container .card .content .imagebox
+.imagebox
 {
     position: relative;
     width: 12vw;
@@ -320,53 +289,129 @@ section{
     transition: 0.5s;
 }
 
-
-.container .card .content .imagebox img
+.imagebox img
 {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
+    transition: 1s;
 }
 
-.container .card .content .content_box h3{
-    color: #c5c6c7;
+.card:hover .imagebox {
+    transform: translateY(-25vh);
+}
+
+.imagebox:hover {
+    box-shadow: 0 1px 10px #66fcf1, 0 1px 20px #66fcf1, 0 1px 30px #66fcf1;
+}
+
+h3{
     font-weight: 200;
     font-size: 4vh;
     text-align: center;
     margin: 20px 0 10px;
+    transition: 1s;
 }
 
-.container .card .content .content_box h3 span{
-    font-weight: 300;
-    font-size: 4vh;
-    text-align: center;
+.card:hover h3 {
+    color: #C5C6C7;
+    font-weight: bold;
+    letter-spacing: 3px;
+    transform: translateY(-30vh);
 }
 
+/* ========================card-dialog==================== */
 
+.content_box {
+    width: 25vh;
+    display: flex;
+    justify-content: center;
+}
 
+.developer {
+    position: absolute;
+}
 
+.content_box h1 {
+    font-size: 4rem;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    text-align: left;
+    opacity: 0;
+    transition: 1s;
+}
 
+.card:hover h1 {
+    opacity: 1;
+    transform: translateY(-20vh);
+}
+
+.content_box p {
+    margin-top: 3vh;
+    font-size: 2.1rem;
+    opacity: 0;
+    transition: 1s;
+}
+
+.card:hover p {
+    opacity: 1;
+    transform: translateY(-25vh);
+}
+
+.right {
+    font-size: 4rem;
+    display: flex;
+    justify-content: right;
+    opacity: 0;
+    transition: 1s;
+}
+
+.right:hover {
+    transform: translateY(-10vh);
+    opacity: 1;
+}
+
+.developer a {
+    position: absolute;
+    margin-left: 25%;
+    height: 4vh;
+    width: 16vh;
+    opacity: 0;
+    transition: 1s;
+}
+
+.developer a img {
+    margin-left: 0.5vh;
+    height: 4vh;
+    width: 15vh;
+}
+
+.card:hover a {
+    opacity: 1;
+    transform: translateY(-22vh);
+}
+
+.developer a:hover {
+    border-radius: 0.2rem;
+    background-color: #C5C6C7;
+    box-shadow: 0 0 100px #C5C6C7;
+}
+
+/* -------------------------------------------------------- */
 footer{
-    height: 10vh;
+    height: 5vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #c5c6c7;
+    color: #C5C6C7;
     font-size: 2.6vh;
-    animation: fade_in 10s;
+    transition: 1s;
 }
 
-@keyframes fade_in {
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
+footer:hover {
+    cursor: default;
+    letter-spacing: 2px;
+    transform: translateY(-2vh);
 }
-
 
 /* --------------------- Scrollbar ------------------------------- */
 

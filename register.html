@@ -51,13 +51,13 @@
 
                     <label>Status</label>
                     <label for="status">
-                        <input type="radio" value="student" name="status" id="status0">Student
+                        <input class="toggle" type="radio" value="student" name="status" id="status0">Student
                     </label>
                     <label for="status">
-                        <input type="radio" value="employed" name="status" id="status1">Employed
+                        <input class="toggle" type="radio" value="employed" name="status" id="status1">Employed
                     </label>
                     <label for="status">
-                        <input type="radio" value="others" name="status" id="status2">others
+                        <input class="toggle" type="radio" value="others" name="status" id="status2">others
                     </label>
 
                     <div class="button">
@@ -88,8 +88,8 @@
                     <input id="confirmPass" name="password" type="password" placeholder="Confirm your password" required>
 
                     <br>
-                    <label style="color: blue; font-size: 0.75rem;">
-                        <input type="checkbox" value="Accept" name="termsAndConditions" id="termsAndConditions"
+                    <label>
+                        <input class="check" type="checkbox" value="Accept" name="termsAndConditions" id="termsAndConditions"
                             required><a href="#">Agree to the Terms & conditions</a>
                     </label><br>
                     <button id="submitBtn" type="submit">Submit</button>

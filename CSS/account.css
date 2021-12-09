@@ -243,16 +243,14 @@ hr {
     width: 100%;
     height: 50vh;
     opacity: 0.2;
-    background-position: top;
-    background-size: cover;
-    z-index: auto;
-    /* transform: none; */
+    background: url("images/editorbtn.jpg");
+    background-position: left;
     transition: 2.5s;
 }
 
 .editor:hover {
     opacity: 1;
-    background: url("images/editorbtn.jpg");
+    background-position: right;
 }
 
 .editior:hover p {
@@ -349,31 +347,21 @@ hr {
 
 .footer{
     background-color: rgba(0,0,0,0);
-    height: 5vh;
+    height: 6vh;
     display: flex;
     justify-content: center;
-    padding: 5vh 0 1vh 0;
+    padding-top: 8vh;
     color: #C5C6C7;
     font-size: 2.6vh;
-    animation: footer 2.25s ease-out;
-    animation-fill-mode: forwards;
+    transition: 1s;
 }
 
 .footer:hover {
     color: #0B0C10;
-    transition: 1s;
     font-weight: 200%;
     letter-spacing: 3px;
-    transform: translateY(-3vh);
+    transform: translateY(-1.5vh);
     opacity: 0;
-}
-
-@keyframes footer {
-    0%{
-        opacity: 0;
-    } 100% {
-        opacity: 1;
-    }
 }
 /* ============================================= */
 /* ==================Scroolbar================== */

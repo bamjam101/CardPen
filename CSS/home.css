@@ -10,6 +10,15 @@
         #66FCF1,
         #0B0C10
     );
+
+    --antiflow: linear-gradient(
+        #0B0C10,
+        #66FCF1,
+        #757985,
+        #45A29E,
+        #1F2833,
+        #C5C6C7,
+    );
 }
 
 *{
@@ -123,19 +132,18 @@ main {
 }
 
 .page-description{
-    margin: 13.5vh 0 100vh 0;
-    color: #C5C6C7;
+    color: rgba(0,0,0,0);
+    margin: 12vh 0 100vh 0;
     text-align: center;
-    font-size: 9vh;
+    font-size: 10vh;
     justify-content: center;
-}
-
-@keyframes motion {
-    0% {
-        background-position: left;
-    }100% {
-        background-position: right;
-    }
+    font-weight: bold ;
+    background-image: var(--flow);
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-size: 200%;
+    background-position: left;
+    animation: motion 10s infinite alternate;
 }
 
 #text1{
@@ -155,8 +163,8 @@ main {
 }
 
 #text2 {
-    font-family: consolas;
-    animation: fade 4s ease-out;
+    color: #C5C6C7;
+    animation: fade 5s ease-out;
     animation-fill-mode: forwards;
 }
 
@@ -164,7 +172,7 @@ main {
     0% {
         opacity: 0;
     }100% {
-        opacity: 1;
+        opacity: 0.8;
     }
 }
 
@@ -181,6 +189,14 @@ main {
         padding-left: 60vw;
     }100% {
         padding-left: 18vw;
+    }
+}
+
+@keyframes motion {
+    0% {
+        background-position: left;
+    }100% {
+        background-position: right;
     }
 }
 
@@ -434,7 +450,7 @@ main {
 
 /* =======================Get Started======================= */
 
-center {
+.center {
     margin: 16vh 0 16vh 0;
     height: 80vh;
     width: 100%;
@@ -444,12 +460,14 @@ center {
     transition: 1s;
 }
 
-center:hover {
+.center:hover {
+    cursor: default;
     border-radius: 16rem;
     box-shadow: 0 0 20px #66fcf1, 0 0 40px #66fcf1, 0 0 80px #66fcf1;
 }
 
-center .p {
+.center .p {
+    text-align: center;
     transform: translateY(20vh);
     padding: 10vh 0 2vh 0;
     color: #c5c6c7;
@@ -460,7 +478,7 @@ center .p {
     transition: 1s;
 }
 
-center:hover .p {
+.center:hover .p {
     transform: translateY(0);
     cursor: default;
     color: #66fcf1;
@@ -469,7 +487,9 @@ center:hover .p {
 
 /* ------------------------------------ */
 
-center p {
+.center p {
+    display: flex;
+    justify-content: center;
     letter-spacing: 1px;
     text-decoration: solid;
     line-height: 4.5vh;
@@ -478,33 +498,38 @@ center p {
     transition: 1.5s;
 }
 
-center:hover p{
+.center:hover p{
     opacity: 1;
     text-shadow: 0 3px 15px #fff;
 
 }
 
 .ideas {
+    font-weight: bold;
+    text-align: center;
     margin-top: 5vh;
     opacity: -1;
     text-transform: uppercase;
     list-style-type: square;
     color: white;
     text-shadow: 0px 1px 5px #C5C6C7;
+    transform: translateY(10vh);
     transition: 1s;
 }
 
-center:hover .ideas {
-    transform: translateY(-10vh);
+.center:hover .ideas {
+    letter-spacing: 2px;
+    transform: translateY(0);
     opacity: 1;
 }
 
 /* ------------------------------------ */
 
-center .login {
-    position: relative;
+.center a {
+    position: absolute;
     display: inline-block;
     padding: 20px 10px;
+    margin-left: 45%;
     text-decoration: none;
     letter-spacing: 4px;
     text-transform: uppercase;
@@ -512,26 +537,27 @@ center .login {
     color: #757985;
     background: #1F2833;
     overflow: hidden;
+    transform: translateY(0.1rem);
+    transition: 1s;
 }
 
-center:hover .login {
-    transition-duration: 1s;
+.center:hover a {
     transform: translateY(22.5vh);
 }
 
-center .login:hover {
+.center a:hover {
     color: white;
     background-color: #0B0C31;
     box-shadow: 0 0 30px #0B0C31, 0 0 60px #0B0C31, 0 0 90px #0B0C31;
     transition-delay: 1s;
 }
 
-center a span {
+.center a span {
     position: absolute;
     display: block;
 }
 
-center a span:nth-child(1) {
+.center a span:nth-child(1) {
     top: 0;
     left: -100%;
     height: 2px;
@@ -539,12 +565,12 @@ center a span:nth-child(1) {
     background: linear-gradient(90deg,transparent,white);
 }
 
-center a:hover span:nth-child(1) {
+.center a:hover span:nth-child(1) {
     left: 100%;
     transition: 1s;
 }
 
-center a span:nth-child(2) {
+.center a span:nth-child(2) {
     right: 0;
     top: -100%;
     height: 100%;
@@ -552,13 +578,13 @@ center a span:nth-child(2) {
     background: linear-gradient(180deg,transparent,white);
 }
 
-center a:hover span:nth-child(2) {
+.center a:hover span:nth-child(2) {
     top: 100%;
     transition: 1s;
     transition-delay: 0.25s;
 }
 
-center a span:nth-child(3) {
+.center a span:nth-child(3) {
     bottom: 0;
     right: -100%;
     height: 2px;
@@ -566,13 +592,13 @@ center a span:nth-child(3) {
     background: linear-gradient(270deg,transparent,white);
 }
 
-center a:hover span:nth-child(3) {
+.center a:hover span:nth-child(3) {
     right: 100%;
     transition: 1s;
     transition-delay: 0.5s;
 }
 
-center a span:nth-child(4) {
+.center a span:nth-child(4) {
     left: 0;
     bottom: -100%;
     height: 100%;
@@ -580,7 +606,7 @@ center a span:nth-child(4) {
     background: linear-gradient(360deg,transparent,white);
 }
 
-center a:hover span:nth-child(4) {
+.center a:hover span:nth-child(4) {
     bottom: 100%;
     transition: 1s;
     transition-delay: 0.75s;
@@ -664,17 +690,15 @@ footer{
     align-items: center;
     color: #C5C6C7;
     font-size: 2.6vh;
-    animation: footer 2.25s ease-in;
-    animation-fill-mode: forwards;
+    transition: 1s;
 }
 
-@keyframes footer {
-    0%{
-        opacity: 0;
-    } 100% {
-        opacity: 1;
-    }
+footer:hover {
+    cursor: default;
+    letter-spacing: 3px;
+    transform: translateY(-3vh);
 }
+
 
 /* --------------------------Scrollbar-------------------------- */
 
