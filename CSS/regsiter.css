@@ -22,6 +22,7 @@ html{
 }
 
 body{
+    height: 100vh;
     background-image: var(--flow);
     background-size: 300%;
     background-repeat: no-repeat;
@@ -433,17 +434,21 @@ footer{
         font-size: 70%;
     }
     .form{
-        height: 55vh;
+        height: 60vh;
         width: 50vw;
     }
 
     .formTwo{
-        height: 55vh;
+        height: 60vh;
         width: 50vw;
     }
 
     .form form label {
-        line-height: 2.5vh;
+        line-height: 3vh;
+    }
+
+    .formTwo form label {
+        line-height: 3vh;
     }
 
     .form:hover form a {
@@ -464,16 +469,16 @@ footer{
 
 }
 
-@media(max-width:768px){
+@media(max-width:786px){
     html{
         font-size: 50%;
     }
     .form{
-        height: 75vh;
+        height: 55vh;
         width: 40vw;
     }
     .formTwo{
-        height: 75vh;
+        height: 55vh;
         width: 40vw;
     }
 
@@ -485,6 +490,49 @@ footer{
         height: 89vh;
     }
 
+    .form form label {
+        line-height: 2rem;
+    }
+
+    .formTwo form label {
+        line-height: 2rem;
+    }
+
+    footer {
+        transform: translateY(-2vh);
+    }
+    
+}
+
+@media(max-height: 560px){
+    html{
+        font-size: 50%;
+    }
+    .form{
+        height: 70vh;
+        width: 40vw;
+    }
+    .formTwo{
+        height: 70vh;
+        width: 40vw;
+    }
+
+    .nav-bar {
+        height: 7vh;
+    }
+
+    .container{
+        height: 89vh;
+    }
+
+    .form form label {
+        line-height: 2rem;
+    }
+
+    .formTwo form label {
+        line-height: 2rem;
+    }
+
     footer {
         transform: translateY(-2vh);
     }
@@ -492,10 +540,12 @@ footer{
 }
 
 
-@media(max-width:580px){
+@media(max-width:560px){
     html{
         font-size: 40%;
+        max-height: 100vh;
     }
+
     .form{
         height: 60vh;
         width: 85vw;
@@ -508,69 +558,7 @@ footer{
     .nav-logo {
         transform: translateX(3vh) translateY(9vh);
         font-weight: bold;
-    }
-
-    .nav-logo p {
-        font-size: 2.6rem;
-    }
-
-    .form form a {
-        font-size: 2.1rem;
-    }
-
-    .nav-bar {
-        display: block;
-        height: 22.5vh;
-        text-align: right; 
-    }
-
-    nav ul li{
-        line-height: 4vh;
-        transform: translateY(-3.5vh);
-    }
-
-    nav ul{
-        display: block;
-        list-style: none;
-        text-decoration: none;
-    }
-
-    .container {
-        height: 65vh;
-        display: block;
-        margin-top: 8vh;
-        margin-left: 7.5%;
-    }
-
-    .form form label {
-        line-height: 2.8vh;
-    }
-
-    .formTwo form label {
-        line-height: 3vh;
-    }
-
-    footer {
-        height: 4.5vh;
-    }
-}
-    
-@media(max-width:400px){
-    html{
-        font-size: 40%;
-    }
-    .form{
-        height: 60vh;
-        width: 85vw;
-    }
-    .formTwo{
-        height: 60vh;
-        width: 85vw;
-    }
-
-    .nav-logo {
-        transform: translateX(3vh) translateY(9vh);
-        font-weight: bold;
+        max-width: 97vw;
     }
 
     .nav-logo p {
