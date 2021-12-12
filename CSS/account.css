@@ -5,6 +5,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html{
+    font-size: 70%;
+}
+
 body{
     background: #0B0C10;
     width: 100%;
@@ -43,7 +47,7 @@ body{
 .nav-logo p{
     padding: 0.2rem;
     display: flex;
-    font-size: 2.6vh;
+    font-size: 2rem;
     transition: 0.5s;
 }
 
@@ -78,7 +82,7 @@ nav ul{
     color: #c5c6c7;
     margin: 0.5em;
     letter-spacing: 0.1em;
-    font-size: 2.5vh;
+    font-size: 2rem;
     padding: 0.5vh;
 }
 
@@ -101,7 +105,7 @@ nav ul{
     text-shadow: 0 0 20px;
 }
 
-@media screen and (max-width: 480px){
+/* @media screen and (max-width: 480px){
     .nav-bar {
         width: 100%;
         font-size: 1.5rem;
@@ -114,7 +118,7 @@ nav ul{
         letter-spacing: 2px;
         margin: 0;
     }
-}
+} */
 
 /* ======================Main===================== */
 
@@ -181,11 +185,13 @@ hr {
     padding: 4vh;
     color: white;
     text-shadow: 1px 1px 0 2px white;
+    font-size: 2rem;
 }
 
 .username p {
     display: absolute;
-    margin-left: 84vh;
+    margin-left: 40vw;
+    font-size: 2rem;
 }
 
 .email {
@@ -195,11 +201,13 @@ hr {
     padding: 4vh;
     color: white;
     text-shadow: 1px 1px 0 2px white;
+    font-size: 2rem;
 }
 
 .email p {
     display: absolute;
-    margin-left: 80vh;
+    margin-left: 38vw;
+    font-size: 2rem;
 }
 
 .bio {
@@ -211,6 +219,7 @@ hr {
     display: auto;
     text-shadow: 1px 1px 0 2px white;
     transition: 1s;
+    font-size: 2rem;
 }
 
 .bio img {
@@ -227,7 +236,7 @@ hr {
     border: none;
     background-color: #0B0C10;
     color: white;
-    font-size: 16px;
+    font-size: 2rem;
     transition: box-shadow 1s;
 }
 
@@ -246,6 +255,8 @@ hr {
     background: url("images/editorbtn.jpg");
     background-position: left;
     transition: 2.5s;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .editor:hover {
@@ -259,6 +270,7 @@ hr {
 
 .editor p {
     font-weight: bold;
+    font-size: 2rem;
     display: flex;
     padding: 16vh 0 10vh 0;
     justify-content: center;
@@ -352,18 +364,10 @@ hr {
     justify-content: center;
     padding-top: 8vh;
     color: #C5C6C7;
-    font-size: 2.6vh;
+    font-size: 2rem;
     transition: 1s;
 }
 
-.footer:hover {
-    color: #0B0C10;
-    font-weight: 200%;
-    letter-spacing: 3px;
-    transform: translateY(-1.5vh);
-    opacity: 0;
-}
-/* ============================================= */
 /* ==================Scroolbar================== */
 
 
@@ -384,3 +388,94 @@ hr {
 ::-webkit-scrollbar-thumb:hover{
     background: #c5c6c7c4;   
 }
+
+/* ======================== Media Queries ============================ */
+
+@media(max-width:1024px)
+{
+    html{
+        font-size: 60%;
+    }
+    .username p {
+        display: absolute;
+        margin-left: 41vw;
+        font-size: 2rem;
+    }
+
+}    
+
+@media(max-width:768px)
+{
+    html{
+        font-size: 50%;
+    }
+
+    .editor {
+        transition: 3s;
+    }
+    
+    .editor:hover {
+        opacity: 1;
+        background-position: center;
+    }
+
+    .username p {
+        display: absolute;
+        margin-left: 41vw;
+        font-size: 2rem;
+    }
+    .email p{
+        margin-left: 37.5vw;
+    }
+}
+
+@media(max-width:650px)
+{
+    html{
+        font-size: 42%;
+    }
+}
+
+
+@media(max-width:560px)
+{
+    html{
+        font-size: 40%;
+    }
+    .nav-logo {
+        transform: translateX(3vh) translateY(9vh);
+        font-weight: bold;
+        max-width: 90vw;
+    }
+
+    .nav-logo p {
+        font-size: 2.6rem;
+    }
+
+    .nav-bar {
+        display: block;
+        height: 22.5vh;
+        text-align: right; 
+    }
+
+    nav ul li{
+        line-height: 4vh;
+        transform: translateY(-3.5vh);
+    }
+
+    nav ul{
+        display: block;
+        list-style: none;
+        text-decoration: none;
+    }
+
+    .username p {
+        display: absolute;
+        margin-left: 30.5vw;
+        font-size: 2rem;
+    }
+    .email p{
+        margin-left: 25vw;
+    }
+}
+

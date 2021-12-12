@@ -548,17 +548,17 @@ footer{
 
     .form{
         height: 60vh;
-        width: 85vw;
+        width: 75vw;
     }
     .formTwo{
         height: 60vh;
-        width: 85vw;
+        width: 75vw;
     }
 
     .nav-logo {
         transform: translateX(3vh) translateY(9vh);
         font-weight: bold;
-        max-width: 97vw;
+        max-width: 90vw;
     }
 
     .nav-logo p {
@@ -587,10 +587,11 @@ footer{
     }
 
     .container {
+        display: grid;
         height: 65vh;
-        display: block;
-        margin-top: 8vh;
-        margin-left: 7.5%;
+        place-items: center;
+        margin-top: 5vh;
+        /* margin-left: 7.5%; */
     }
 
     .form form label {
@@ -602,6 +603,7 @@ footer{
     }
 
     footer {
+        padding-top: 3vh;
         height: 4.5vh;
     }
 }
