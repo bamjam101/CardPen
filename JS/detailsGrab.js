@@ -1,4 +1,4 @@
 import { details } from './details.js';
 
 document.querySelector("#username").innerHTML = "GauravRedkar";
-document.querySelector("#email").innerHTML = "gauravmail.gmail.com";
+document.querySelector("#email").innerHTML = "gauravredkar2001@gmail.com";

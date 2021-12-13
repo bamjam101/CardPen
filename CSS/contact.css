@@ -15,6 +15,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html{
+    font-size: 70%;
+}
+
 body{
     background: #0b0310;
 }
@@ -53,7 +57,7 @@ body{
 
 .nav-logo p{
     display: flex;
-    font-size: 2.6vh;
+    font-size: 2rem;
     transition: 0.5s;
 }
 
@@ -91,7 +95,7 @@ li{
     text-decoration: none;
     color: #c5c6c7;
     letter-spacing: 0.5px;
-    font-size: 2.5vh;
+    font-size: 2rem;
     padding: 0.5vh;
     transition: 0.5s;
 }
@@ -306,7 +310,7 @@ section{
 
 h3{
     font-weight: 200;
-    font-size: 4vh;
+    font-size: 3rem;
     text-align: center;
     margin: 20px 0 10px;
     transition: 1s;
@@ -316,13 +320,13 @@ h3{
     color: #C5C6C7;
     font-weight: bold;
     letter-spacing: 3px;
-    transform: translateY(-30vh);
+    transform: translateY(-28vh);
 }
 
 /* ========================card-dialog==================== */
 
 .content_box {
-    width: 25vh;
+    width: 18vw;
     display: flex;
     justify-content: center;
 }
@@ -342,19 +346,19 @@ h3{
 
 .card:hover h1 {
     opacity: 1;
-    transform: translateY(-20vh);
+    transform: translateY(-17vh);
 }
 
 .content_box p {
-    margin-top: 3.5vh;
-    font-size: 2.1rem;
+    margin-top: 8vh;
+    font-size: 2.5rem;
     opacity: 0;
     transition: 1s;
 }
 
 .card:hover p {
     opacity: 1;
-    transform: translateY(-25vh);
+    transform: translateY(-23vh);
 }
 
 .right {
@@ -366,18 +370,19 @@ h3{
 }
 
 .right:hover {
-    transform: translateY(-10vh);
+    transform: translateY(-9vh);
     opacity: 1;
 }
 
 .developer a {
-    position: absolute;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 25%;
+    margin-left: 7%;
+    margin-top: 14%;
     height: 6vh;
-    width: 18vh;
+    width: 10vw;
     opacity: 0;
     transition: 1s;
 }
@@ -406,7 +411,7 @@ footer{
     justify-content: center;
     align-items: center;
     color: #C5C6C7;
-    font-size: 2.6vh;
+    font-size: 2.6rem;
     transition: 1s;
 }
 
@@ -434,4 +439,262 @@ footer:hover {
 
 ::-webkit-scrollbar-thumb:hover{
     background: #c5c6c7c4;   
+}
+
+
+/* ======================== Media Queries ============================ */
+
+@media(max-width:1024px)
+{
+    html{
+        font-size: 60%;
+    }
+
+    h2{
+    position: relative;
+    font-size: 10vw;
+    color: #252839;
+    text-transform: uppercase;
+    white-space: nowrap;
+    }
+
+    .social-media ul li .fab{
+        font-size: 50px;
+        line-height: 100px;
+    }
+
+    .social-media ul li a{
+        position: relative;
+        display: block;
+        width: 100px;
+        height: 100px;
+    }
+
+    .container .card{
+        width: 70vw;
+        height: 90vw;
+        margin-top: 25rem;
+    }
+
+    .imagebox{
+        position: relative;
+        width: 30rem;
+        height: 30rem;
+    }
+
+    .content_box h3{
+        font-size: 5rem;
+    }
+
+    .content_box h1{
+        font-size: 8rem;
+    }
+
+    .content_box p{
+        font-size: 6rem;
+    }
+
+    .right{
+        font-size: 8rem;
+    }
+
+    .developer a {
+        margin-left: 20%;
+        margin-top: 14%;
+        height: 6vh;
+        width: 18vh;
+    }
+}
+
+@media(max-width:768px)
+{
+    html{
+        font-size: 50%;
+    }
+
+    .social-media{
+        transform: translateY(5rem);
+    }
+
+    .social-media ul li .fab{
+    font-size: 30px;
+    line-height: 70px;
+    transition: .6s;
+    color: black;
+    }
+
+    .social-media ul li a{
+    position: relative;
+    display: block;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #c5c6c7;
+    text-align: center;
+    transition: 0.6s;
+    }
+    
+    .imagebox{
+    position: relative;
+    width: 40rem;
+    height: 40rem;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: 0.5s;
+    }
+
+    .container{
+    display: inline-flex;
+    margin: 0;
+    }
+
+    .container .card{
+    position: relative;
+    width: 80vw;
+    height: 120vw;
+    background: #1f2833;
+    margin-top: 25rem;
+    /* margin: 4vh; */
+    box-shadow: 0px 0px 15px #1f2833;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    }
+
+    .content_box h1{
+        font-size: 6rem;
+    }
+
+    .content_box p{
+        font-size: 4rem;
+    }
+
+    .right{
+        font-size: 6rem;
+    }
+
+    .developer a {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10%;
+        margin-top: 14%;
+        height: 6vh;
+        width: 18vh;
+        opacity: 0;
+        transition: 1s;
+    }
+
+
+}
+
+@media(max-width:600px)
+{
+    html{
+        font-size: 40%;
+    }
+
+    .nav-logo {
+        transform: translateX(3vh) translateY(9vh);
+        font-weight: bold;
+        max-width: 90vw;
+    }
+
+    .nav-logo p {
+        font-size: 2.6rem;
+    }
+
+    .nav-bar {
+        display: block;
+        height: 22.5vh;
+        text-align: right; 
+    }
+
+    nav ul li{
+        line-height: 3.5vh;
+        transform: translateY(-3.5vh);
+    }
+
+    nav ul{
+        display: block;
+        list-style: none;
+        text-decoration: none;
+    }
+
+    .social-media{
+        transform: translateY(-1rem);
+    }
+
+    .social-media ul li .fab{
+    font-size: 25px;
+    line-height: 50px;
+    transition: .6s;
+    color: black;
+    }
+
+    .social-media ul li a{
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #c5c6c7;
+    text-align: center;
+    transition: 0.6s;
+    }
+    
+    .imagebox{
+    position: relative;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: 0.5s;
+    }
+
+    .container{
+    display: inline-flex;
+    margin: 0;
+    }
+
+    .container .card{
+    position: relative;
+    width: 80vw;
+    height: 120vw;
+    background: #1f2833;
+    margin-top: 25rem;
+    /* margin: 4vh; */
+    box-shadow: 0px 0px 15px #1f2833;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    }
+
+    .content_box h1{
+        font-size: 6rem;
+    }
+
+    .content_box p{
+        font-size: 4rem;
+    }
+
+    .right{
+        font-size: 6rem;
+    }
+
+    .developer a {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10%;
+        margin-top: 14%;
+        height: 6vh;
+        width: 18vh;
+        opacity: 0;
+        transition: 1s;
+    }
 }
