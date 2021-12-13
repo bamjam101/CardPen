@@ -364,13 +364,14 @@ input:hover {
 }
 
 .formTwo form button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     margin-top: 4vh; margin-left: 1rem;
     border: 0;
-    text-transform: uppercase;
     align-content: center;
     overflow: hidden;
-    font-size: 2.5rem;
     color: white;
     background-color: #757985;
     height: 7.5vh;
@@ -379,16 +380,20 @@ input:hover {
     clip-path: polygon(85% 0, 100% 50%, 85% 100%, 0% 100%, 20% 53%, 0% 0%);
     background-position: center;
     background-size: cover;
+    font-size: 2.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
     transition: 1s;
 }
-
 .formTwo form button:hover {
+    font-weight: bold;
+    color: black;
+    margin-left: 3rem;
+    width: 70%;
     transform: translateY(-5px);
     border-radius: 6em;
     background: #66fcf1;
     box-shadow: 0 0 10px #66fcf1, 0 0 40px #66fcf1, 0 0 80px #66fcf1;
-    color: black;
-    font-weight: bold;
 }
 
 .formTwo form a {

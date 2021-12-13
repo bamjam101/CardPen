@@ -1,3 +1,4 @@
+
 function profile() {
     let profilePic = document.querySelector(".profilePic");
     let profileBox = document.querySelector(".profile");

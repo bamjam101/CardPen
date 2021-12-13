@@ -256,7 +256,6 @@ hr {
     background-position: left;
     transition: 2.5s;
     background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .editor:hover {
@@ -281,17 +280,23 @@ hr {
 .editor a {
     position: relative;
     display: inline-block;
+    font-size: 2.1rem;
     margin-left: 45%;
     padding: 10px 20px;
     text-decoration: none;
-    background: rgba(174, 175, 91, 0.5);
+    background: rgba(203, 204, 139, 0.5);
     color: whitesmoke;
     overflow: hidden;
 }
 
+.editorBtn {
+    transition: 1s;
+}
+
 .editor .editorBtn:hover {
-    color: white;
-    background-color: #768330;
+    color: #0B0C10;
+    font-weight: bold;
+    /* background-color: #768330; */
     box-shadow: 0 0 30px #768330, 0 0 60px #768330, 0 0 90px #768330;
     transition-delay: 1s;
 }
@@ -476,6 +481,10 @@ hr {
     }
     .email p{
         margin-left: 25vw;
+    }
+
+    .editor a {
+        margin-left: 35vw;
     }
 }
 
